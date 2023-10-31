@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00BCD4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginVertical="10dp"
+
+                    android:gravity="center"
+
+                    android:text="@string/app_title"
+                    android:textColor="@color/black"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtedu"
+                    android:layout_margin="10dp"
+                    android:text="@string/personal_info"
+                    android:textColor="#4879F3"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:hint="@string/hint_name"
+                    android:singleLine="true"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edtnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="10dp"
+                    android:hint="@string/hint_phonenumber"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="10dp"
+
+                    android:hint="@string/hint_email"
+                    android:singleLine="true"
+
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edtaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="10dp"
+                    android:hint="@string/hint_address"
+                    android:singleLine="true"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/gender"
+                    android:textSize="30sp"
+                    android:textColor="#4879F3"
+                    android:textStyle="bold"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gender_male"
+                        android:layout_margin="10dp"
+                        android:textSize="20sp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gender_female"
+                        android:layout_margin="10dp"
+                        android:textSize="20sp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gender_other"
+                        android:layout_margin="10dp"
+                        android:textSize="20sp"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="373dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/marital_status"
+                    android:textColor="#4879F3"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/single_status"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"/>
+
+                <RadioButton
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/married_status"
+                    android:textSize="20sp" />
+
+
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/languages_speaks"
+                    android:textSize="30sp"
+                    android:textColor="#4879F3"
+                    android:textStyle="bold"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/languages_gujarati"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:text="@string/languages_marathi"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/languages_english"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:text="@string/languages_hindi"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/your_hobbies"
+                    android:textSize="30sp"
+                    android:textColor="#4879F3"
+                    android:textStyle="bold"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/hobby_singing"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hobby_dancing"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/hobby_reading"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/hobby_travelling"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/hobby_movies"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hobby_learning"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/hobby_playing"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hobby_writing"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/educational_details"
+                    android:textColor="#4879F3"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/class_name"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/class_std"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/class_stad"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/class_graduation"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/class_per"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtmark10"
+                    android:layout_margin="10dp"
+
+                    android:singleLine="true"
+
+                    />
+
+                <EditText
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtmark12"
+                    android:layout_margin="10dp"
+                    />
+
+                <EditText
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtgraduation"
+                    android:layout_margin="10dp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/class_year"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:layout_width="54dp"
+                    android:id="@+id/edtyear10"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    />
+
+                <EditText
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtyear12"
+                    android:layout_margin="10dp"
+                    />
+
+                <EditText
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtyeargreduation"
+                    android:layout_margin="10dp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/past_job"
+                    android:textSize="25sp"
+
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edtyearexperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:hint="@string/hint_job"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="20sp" />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/your_skill"
+                    android:textColor="#4879F3"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cbcoding"
+                    android:layout_margin="10dp"
+                    android:text="@string/skill_coding"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cbcreativity"
+                    android:text="@string/skill_creativity"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cbleadership"
+                    android:layout_margin="10dp"
+                    android:text="@string/skill_leadership"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cbteamwork"
+                    android:text="@string/skill_teamwork"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id="@+id/cbmarketing"
+                    android:text="@string/skill_marketing"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cblearning"
+                    android:text="@string/skill_learning"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="124dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btnsubmit"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:text="@string/button_1" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
